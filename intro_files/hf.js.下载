@@ -1,0 +1,117 @@
+/**
+ * Created by sd on 2017/5/20.
+ */
+
+$(document).ready(function(){
+
+
+
+
+
+    /*�����������ʾ �ر�*/
+    $('.brow-close').click(function(){
+        $('.browserupgrade').css('display','none');
+    });
+
+
+    //�ֻ��γ�
+
+    var $couBtn = $('.btn-course');
+    var $sidBtn = $('.sidenav-btn');
+
+    $couBtn.click(function(){
+        $('body').addClass('fixed');
+    });
+
+    function snRem() {
+        $('body').removeClass('fixed');
+        $('.sidenav').removeClass('show');
+    }
+    $sidBtn.click(function(){
+        $('body').removeClass('fixed');
+        $('.sidenav').removeClass('show');
+        $('.sidenav-overlay').css('display','none');
+    });
+
+
+    //�ֻ�����
+
+    $('.sjddneirongs>div').on('click',function () {
+        var _this=this;
+
+        if($(_this).siblings('ul').height()){
+            $(_this).css({
+                background:'#fff',
+                border:'1px solid #ededed',
+                color:'#999'
+            });
+            $(_this).children('p').css({
+                display:'none'
+            });
+            $(_this).siblings('ul').css({
+                height:0,
+                paddingBottom:'0',
+                marginBottom:'0'
+            })
+        }else{
+            $('.sjddneirongs>div').css({
+                background:'#fff',
+                border:'1px solid #ededed',
+                color:'#999'
+            });
+            $(_this).css({
+                background:'#dc006c',
+                border:'1px solid #dc006c',
+                color:'#fff'
+            });
+            $('.sjddneirongs>div').children('p').css({
+                display:'none'
+            });
+            $('.sjddneirongs>div').siblings('ul').css({
+                height:0,
+                paddingBottom:'0',
+                marginBottom:'0'
+            });
+            $(_this).children('p').css({
+                display:'block'
+            });
+            var gao=$(_this).siblings('ul').children('li').outerHeight()*$(_this).siblings('ul').children('li').length;
+            var ulcss={
+                height:gao+'px',
+                marginBottom:'23px'
+            };
+
+            $(_this).siblings('ul').css(ulcss)
+        }
+    });
+
+    $('.btn-center').on('click',function () {
+        $('body').css({
+            'position':'fixed',
+            'top':'0'
+        });
+        var kuan=$(window).width();
+        var gao=$(window).height();
+        var css={
+            width:kuan,
+            height:gao,
+            right:0
+        };
+        $('.sjdidian').css(css);
+    });
+
+    $('.sjdidian .sjddtitle span').on('click',function () {
+        $('.sjdidian').css({
+            right:'-100%'
+        });
+        $('body').css({
+            'position':'static',
+            'top':'auto'
+        });
+    });
+
+
+
+
+
+});

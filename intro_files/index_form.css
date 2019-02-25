@@ -1,0 +1,546 @@
+@charset "utf-8";
+
+/*新闻列表左边*/
+.news_cont{padding-top: 22px;}
+.dl_line{
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+}
+.dl_list dt {
+    float: left;
+    width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.dl_list dt >img{
+    width:100%;}
+.dl_list dd{
+    position: relative;
+    margin-left: 200px;
+}
+.dl_list dd p{
+    line-height: 1.5;
+    margin-top: 10px;
+    max-height: 64px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.dl_list dd div{
+    color: #b0b0b0;
+    position: absolute;
+    width: 100%;
+    bottom: 6px;
+    left: 0;
+}
+.list_icon{
+    float: left;
+    background: url("../img/news/news_icon.png") no-repeat;
+}
+.list_time{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-position: left 2px;
+    background-size: cover;
+    margin-right: 6px;
+}
+.list_share{
+    display:inline-block;
+    width:20px;
+    height: 16px;
+    background-position: -28px top;
+    margin-left: 30px;
+    margin-right: 6px;
+}
+@media (max-width: 991px) {
+    .dl_list dt {
+        width: 13rem;
+    }
+    .dl_list dt >img{
+        width:100%;}
+    .dl_list dd{
+        margin-left:14rem;
+    }
+    .dl_list dd p{
+        max-height: 42px;
+    }
+}
+@media (max-width: 767px) {
+    .news_cont{padding-top: 1.6rem;}
+    .dl_line{padding-bottom: 1.4rem;}
+    .news_cont .col-xs-12 dl:last-child{padding-bottom: 0;}
+    .dl_list{
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .dl_list dt {
+        float: left;
+        width: 10rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .dl_list dd{
+        margin-left: 11rem;
+    }
+    .dl_list dd h3{
+        line-height: 1.4;
+        padding-top: 2px;
+        max-height: 54px;
+        overflow: hidden;
+    }
+    .yd_right{ float: right !important;}
+    .dl_wrap_list dl:last-child{
+        padding-bottom: 0;
+        border-bottom:none;
+    }
+
+}
+@media (min-width: 768px) {
+    .dl_list dd h3{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        padding-top: 6px;
+        font-size: 1.6rem;
+    }
+}
+
+
+
+/*新闻列表分页*/
+.page_all{
+    display: inline-block;
+    line-height: 44px;
+    padding-left: 12px;
+}
+.pagination>li>a, .pagination>li>span{
+    position: relative;
+    float: left;
+    padding: 10px 16px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #666;
+    text-decoration: none;
+    background-color: #f6f6f6;
+    border: 1px solid #e6e6e6;
+    font-size: 16px;
+}
+.pagination>li>a:hover{
+    background-color: #e2006d;
+    color: #fff;
+}
+.page_more:hover{
+    background-color: #f6f6f6 !important;
+    color: #666 !important;
+}
+.pagination>li .prev{
+    background: url(../img/news/fenye_left.png) no-repeat 8px center #f6f6f6;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.pagination>li .next_page{
+    background: url(../img/news/fenye_right.png) no-repeat 70px center #f6f6f6;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+@media (max-width: 767px){
+    .page_wrap{
+        margin-left: -15px;
+        margin-right: -15px;
+        background: #f4f4f4;
+    }
+    .page_wrap:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .page_wrap:before{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .pag_ul{
+        display: block;
+        margin-bottom: 0;
+        padding: 2rem;
+    }
+    .pag_ul:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .pag_ul:before{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .pag_ul li{
+        width: 50%;
+        display: block;
+        line-height: 3rem;
+        height: 3rem;
+        float: left;
+        text-align: center;
+    }
+    .pagination>li .pre_next{
+        display: block;
+        text-align: center;
+        font-size: 1.8rem;
+        padding: 0 !important;
+        border:none;
+        width: 100%;
+    }
+    .pagination>li .prev{
+        background: url(../img/news/yd_fenye_left.png) no-repeat 20% 2px;
+        background-size: auto 90%;
+        width: 100%;
+    }
+    .pagination>li .next_page{
+        background: url(../img/news/yd_fenye_right.png) no-repeat 80% 2px;
+        background-size: auto 90%;
+        border-left: 1px solid #ddd;
+    }
+    .pagination>li>a:focus{ color: #999 !important;}
+    .pagination>li>a:link{ color: #999 !important;}
+    .pagination>li>a:visited{ color: #999 !important;}
+    .pagination>li>a:hover{ color: #999 !important;}
+    .pagination>li>a:active{color: #999 !important;}
+
+    .pagination>li .prev:focus{
+        background: url(../img/news/yd_fenye_left.png) no-repeat 20% 2px !important;;
+        background-size: auto 90%;
+        width: 100%;
+    }
+   /* .pagination>li .prev:link{
+        background: url(../img/news/yd_fenye_left.png) no-repeat 20% center !important;;
+        background-size: auto 90%;
+        width: 100%;
+    }
+    .pagination>li .prev:visited{
+        background: url(../img/news/yd_fenye_left.png) no-repeat 20% center !important;;
+        background-size: auto 90%;
+        width: 100%;
+    }*/
+    .pagination>li .prev:hover{
+        background: url(../img/news/yd_fenye_left.png) no-repeat 20% 2px !important;;
+        background-size: auto 90%;
+        width: 100%;
+    }
+   /* .pagination>li .prev:active{
+        background: url(../img/news/yd_fenye_left.png) no-repeat 20% center !important;;
+        background-size: auto 90%;
+        width: 100%;
+    }*/
+
+    .pagination>li .next_page:focus{
+        background: url(../img/news/yd_fenye_right.png) no-repeat 80% 2px !important;;
+        background-size: auto 90%;
+    }
+  /*  .pagination>li .next_page:link{
+        background: url(../img/news/yd_fenye_right.png) no-repeat 80% center !important;;
+        background-size: auto 90%;
+    }
+    .pagination>li .next_page:visited{
+        background: url(../img/news/yd_fenye_right.png) no-repeat 80% center !important;;
+        background-size: auto 90%;
+    }*/
+    .pagination>li .next_page:hover{
+        background: url(../img/news/yd_fenye_right.png) no-repeat 80% 2px !important;;
+        background-size: auto 90%;
+    }
+    /*.pagination>li .next_page:active{
+        background: url(../img/news/yd_fenye_right.png) no-repeat 80% center !important;;
+        background-size: auto 90%;
+    }*/
+}
+
+
+/*新闻详情页面*/
+.dl_list dd h3 a:hover, .dl_list dd h3 a:focus{color: #e1006c;}
+.div_wrap{ text-align: center;}
+.detail_tit{ font-size: 26px; line-height: 1.4; margin-top: 12px; font-weight: bold;}
+.detail_ul{
+    display: inline-block;
+    margin-top:18px;
+    margin-bottom: 26px;
+}
+.detail_ul li{
+    display: inline-block;
+    float: left;
+
+}
+.news_p{
+    margin-top: 1rem;
+}
+.news_p p{
+    line-height: 1.8;
+    font-size: 16px;
+    padding: 8px 0;
+}
+.text-center >img{
+    padding: 0.6rem 0 1.5rem 0;
+}
+.article_list a:hover{ color: #e1006c;}
+.article_list1{ margin-bottom: 0.8rem;}
+.detail_caption{
+    margin-bottom: 12px;
+    margin-top:10px;
+}
+.detail_caption span{
+    width:20px;
+    height:20px;
+    margin-right: 8px;
+    display: inline-block;
+    background: url("../img/news/news_icon.png") no-repeat right center;
+    vertical-align: middle;
+}
+.tui_jie{ margin-top: 22px;}
+.dl_detail dt{
+    width: 140px;
+}
+.dl_detail dd{
+   margin-left: 150px;
+}
+.dl_detail dd p{ max-height: 42px;}
+.dl_list dd div{ bottom: 4px;}
+@media(max-width: 1119px){
+    .dl_detail dt{width: 10rem;}
+    .dl_detail dd {margin-left: 11rem;}
+    .dl_detail dd p{max-height: 2.0rem;}
+}
+
+@media(max-width: 991px){
+    .dl_detail dt{width: 6rem;}
+    .dl_detail dd { margin-left: 7rem;}
+    .dl_detail dd p{max-height: 2.0rem;}
+    .dl_list dd h3{padding-top: 2px;}
+    .dl_list dd div{ bottom: 2px;}
+    .yd_right{ float: right;}
+    .list_yd_right{ float:none;}
+}
+
+@media(max-width: 767px) {
+    .detail_tit{ font-size: 2.0rem; text-align: left; margin-top: 0;}
+    .div_wrap{ text-align: left;}
+    .detail_tit{ font-size: 2.4rem;}
+    .detail_ul{
+        display: inline-block;
+        margin-top:1.3rem;
+        margin-bottom: 1.2rem;
+        font-size: 1.3rem;
+    }
+
+    .dl_list dd h3{padding-top: 0px;}
+    .detail_ul li:first-child{ padding-left: 0;}
+    .dl_detail dt{width: 10rem;}
+    .dl_detail dd {
+        margin-left: 11rem;
+    }
+    .news_p p{font-size: 1.8rem; line-height: 1.8}
+    .tui_jie{ margin-top: 2rem;}
+    .article_list{
+        font-size: 1.6rem;
+    }
+    .article_list:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .article_list:before{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .article_list span{
+        float: left;
+        display: inline-block;
+        padding-right: 0.4rem;
+    }
+    .article_list a{
+        display: inline-block;
+        float: left;
+        width: 75%;
+    }
+    .news_p{ margin-top:0px; }
+}
+.yd_ge{
+    margin-left: -15px;
+    margin-right: -15px;
+    height: 1.5rem;
+    margin-top: 2rem;
+}
+/*移动端微信分享*/
+.bdshare-button-style0-16 a, .bdshare-button-style0-16 .bds_more{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+.share_wrap{padding-left: 10px;}
+.yd_share{
+ text-align: center;
+}
+.yd_wrap{
+    display:inline-block;
+}
+/*.dl_list:hover dt img{
+    !*opacity: 0.7;*!
+    transform: scale(1.1);transition: 0.8s;
+}*/
+
+.img_hover1{
+     transform: scale(1.1);transition: 0.8s;
+ }
+.img_hover2{
+    transform: scale(1);transition: 0.8s;
+}
+
+
+/****表单*****/
+.formBox{
+    background: #f15b1a;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    margin-top:16px;
+}
+.formBox h3{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.formBox .formDiv{
+    padding: 20px 30px 20px 20px;
+    background: #fff;
+}
+.formBox .formDiv .form-group{
+   /* width: 40%;*/
+}
+.formBox .formDiv input{
+    /*width:80%;*/
+    border: 1px solid #999;
+}
+.formBox .formDiv input:focus{
+    border: 1px solid #999;
+    box-shadow: none;
+}
+.formBox .formDiv label{
+    font-size: 18px;
+    color: #333;
+    font-weight: normal;
+    padding-right: 5px;
+}
+.formBox .btn{
+    background: #f15b1a;
+    color: #fff;
+    font-size: 18px;
+    border:none;
+}
+.formBox .btn:hover, .formBox .btn:focus, .formBox .btn:active{
+    border:none;
+    background: #f15b1a;
+    box-shadow: none;
+    color: #fff;
+    outline: none;
+}
+.formBox .formDel{
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eaeaea;
+    font-weight: bold;
+}
+.formBox .formDel span{
+    color: #f15b1a;
+
+}
+@media (min-width: 768px){
+    .formBox .formDiv .form-group{
+        width: 26%;
+    }
+    .formBox .formDiv input{
+        width:70%;
+    }
+   .formBox .formDiv .form-group.codeDiv{
+       padding-top: 4px;
+    }
+    .formBox .formDiv .form-group.codeDiv img{
+        float: right;
+    }
+    .formBox .formDiv #code{
+        width:50%;
+    }
+    .formBox .btn{
+        float: right;
+        margin-top: 4px;
+    }
+}
+@media (max-width: 768px){
+    .formBox .btn{
+        width: 100%;
+    }
+    .formBox h3{
+        font-size:2.0rem;
+    }
+    .formBox .formDiv #code{
+        width:50%;
+    }
+    .formBox .formDiv .form-group.codeDiv{
+        margin-bottom: 20px;
+    }
+    .formBox .formDiv .form-group.codeDiv img{
+        float: right;
+    }
+    .formBox .formDiv #code{
+        float: left;
+    }
+}
+
+
+
+
+
+
+/****/
+.rightHot{
+    padding-left: 16px;
+    border: 1px solid #ebebeb;
+}
+.rightHot li{
+    padding: 0 8px 16px 10px;
+    position: relative;
+}
+.rightHot li:before{
+    content: '';
+    display: inline-block;
+    float: left;
+    width:4px;
+    height:4px;
+    background: #f15b1a;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -10px;
+}
+.rightHot li a{
+    font-size: 14px;
+    color: #666;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+.rightHot li:hover:before{
+    background: #f15b1a;
+}
+.rightHot li a:hover{
+    color: #f15b1a;
+}

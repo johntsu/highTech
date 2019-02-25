@@ -1,0 +1,108 @@
+//学员就业跳转
+var url = location.href;
+if(url.indexOf("http://www.tedu.cn/xycrm/")>=0){
+	window.location.href="http://www.tedu.cn/";
+}
+
+//学员就业跳转
+/**if(url.indexOf("http://www.tedu.cn/courses/234085.html")>=0){
+	window.location.href="http://ui.tedu.cn/";
+}
+else if(url.indexOf("http://www.tedu.cn/courses/226448.html")>=0){
+	window.location.href="http://ecd.tedu.cn/";
+}
+else if(url.indexOf("http://www.tedu.cn/courses/223933.html")>=0){
+	window.location.href="http://pm.tedu.cn/";
+}
+else if(url.indexOf("http://www.tedu.cn/courses/80.html")>=0){
+	window.location.href="http://java.tedu.cn/";
+}
+else if(url.indexOf("http://www.tedu.cn/courses/88.html")>=0){
+	window.location.href="http://qa.tedu.cn/";
+}
+else if(url.indexOf("http://www.tedu.cn/courses/81.html")>=0){
+	window.location.href="http://c.tedu.cn/";
+}
+else if(url.indexOf("http://www.tedu.cn/courses/84.html")>=0){
+	window.location.href="http://ued.tedu.cn/";
+}
+else if(url.indexOf("http://www.tedu.cn/courses/85.html")>=0){
+	window.location.href="http://php.tedu.cn/";
+}
+else if(url.indexOf("http://www.tedu.cn/courses/86.html")>=0){
+	window.location.href="http://net.tedu.cn/";
+}
+else if(url.indexOf("http://www.tedu.cn/courses/90.html")>=0){
+	window.location.href="http://so.tedu.cn/";
+}
+else if(url.indexOf("http://www.tedu.cn/courses/83.html")>=0){
+	window.location.href="http://ios.tedu.cn/";
+}
+else if(url.indexOf("http://www.tedu.cn/courses/82.html")>=0){
+	window.location.href="http://android.tedu.cn/";
+}
+else if(url.indexOf("http://www.tedu.cn/courses/87.html")>=0){
+	window.location.href="http://arm.tedu.cn/";
+}
+else if(url.indexOf("http://www.tedu.cn/courses/89.html")>=0){
+	window.location.href="http://linux.tedu.cn/";
+}
+else if(url.indexOf("http://www.tedu.cn/courses/1185.html")>=0){
+	window.location.href="http://ui.tedu.cn/";
+}
+else if(url.indexOf("http://www.tedu.cn/courses/975.html")>=0){
+	window.location.href="http://data.tedu.cn/";
+}
+else if(url.indexOf("http://www.tedu.cn/courses/976.html")>=0){
+	window.location.href="http://web.tedu.cn/";
+}
+else if(url.indexOf("http://www.tedu.cn/courses/977.html")>=0){
+	window.location.href="http://acc.tedu.cn/";
+}
+else if(url.indexOf("http://www.tedu.cn/courses/978.html")>=0){
+	window.location.href="http://unity3d.tedu.cn/";
+}
+else if(url.indexOf("http://java.tedu.cn/courses/")>=0){
+	window.location.href="http://java.tedu.cn/";
+	
+}else if(url.indexOf("http://acc.tedu.cn/courses/")>=0){
+	window.location.href="http://acc.tedu.cn/";
+}else if(url.indexOf("http://android.tedu.cn/courses/")>=0){
+	window.location.href="http://android.tedu.cn/";
+}else if(url.indexOf("http://arm.tedu.cn/courses/")>=0){
+	window.location.href="http://arm.tedu.cn/";
+}else if(url.indexOf("http://c.tedu.cn/courses/")>=0){
+	window.location.href="http://c.tedu.cn/";
+}else if(url.indexOf("http://data.tedu.cn/courses/")>=0){
+	window.location.href="http://data.tedu.cn/";
+}else if(url.indexOf("http://ecd.tedu.cn/courses/")>=0){
+	window.location.href="http://ecd.tedu.cn/";
+}else if(url.indexOf("http://html5.tedu.cn/courses/")>=0){
+	window.location.href="http://html5.tedu.cn/";
+}else if(url.indexOf("http://ios.tedu.cn/courses/")>=0){
+	window.location.href="http://ios.tedu.cn/";
+}else if(url.indexOf("http://linux.tedu.cn/courses/")>=0){
+	window.location.href="http://linux.tedu.cn/";
+}else if(url.indexOf("http://ne.tedu.cn/courses/")>=0){
+	window.location.href="http://ne.tedu.cn/";
+}else if(url.indexOf("http://net.tedu.cn/courses/")>=0){
+	window.location.href="http://net.tedu.cn/";
+}else if(url.indexOf("http://php.tedu.cn/courses/")>=0){
+	window.location.href="http://php.tedu.cn/";
+}else if(url.indexOf("http://pm.tedu.cn/courses/")>=0){
+	window.location.href="http://pm.tedu.cn/";
+}else if(url.indexOf("http://python.tedu.cn/courses/")>=0){
+	window.location.href="http://python.tedu.cn/";
+}else if(url.indexOf("http://qa.tedu.cn/courses/")>=0){
+	window.location.href="http://qa.tedu.cn/";
+}else if(url.indexOf("http://so.tedu.cn/courses/")>=0){
+	window.location.href="http://so.tedu.cn/";
+}else if(url.indexOf("http://ued.tedu.cn/courses/")>=0){
+	window.location.href="http://ued.tedu.cn/";
+}else if(url.indexOf("http://ui.tedu.cn/courses/")>=0){
+	window.location.href="http://ui.tedu.cn/";
+}else if(url.indexOf("http://unity3d.tedu.cn/courses/")>=0){
+	window.location.href="http://unity3d.tedu.cn/";
+}else if(url.indexOf("http://web.tedu.cn/courses/")>=0){
+	window.location.href="http://web.tedu.cn/";
+}**/

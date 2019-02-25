@@ -1,0 +1,22 @@
+/**
+ * Created by Administrator on 2017-05-16.
+ */
+/*$('.lnavs a').on('click',function () {
+    /!**
+     * 改变左导航样式
+     * *!/
+    $('.lnavs a').removeClass('lnav_moren');
+    $('.lnavs a .icon-icon224').removeClass('icon-icon224').addClass('icon-kongxinyuan');
+    $(this).find('span').removeClass('icon-kongxinyuan').addClass('icon-icon224');
+    $(this).addClass('lnav_moren');
+});
+$(window).scroll(function () {
+    console.log(window.scrollY);
+});*/
+var dt_img = $('.dl_list');
+dt_img.hover(function () {
+    //alert(111);
+    $(this).find('dt >img').removeClass('img_hover2').addClass('img_hover1');
+},function () {
+    $(this).find('dt >img').removeClass('img_hover1').addClass('img_hover2');
+});

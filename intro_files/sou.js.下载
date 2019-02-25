@@ -1,0 +1,224 @@
+
+
+var pc = new Array();
+pc[0]= new Array("请选择省份名","请选择城市名");
+pc[1] = new Array("请选择课程","|请选择中心");
+//pc[2] = new Array("城市站","|北京|上海|成都|合肥|深圳|广州|武汉|杭州|沈阳|天津|南京|石家庄|郑州|长沙|重庆|济南|南昌|太原|南宁|昆明|西安|长春|福州|哈尔滨|东莞|珠海|青岛|烟台|厦门|宁波|大连|无锡|苏州|潍坊|兰州|呼和浩特|运城|晋城|海南|临沂");
+pc[2] = new Array("JAVA","|请选择中心|全国|南京|上海|成都|合肥|北京|深圳|广州|武汉|杭州|沈阳|天津|石家庄|郑州|长沙|重庆|济南|南昌|太原|南宁|昆明|西安|长春|福州|哈尔滨|东莞|珠海|青岛|烟台|厦门|宁波|大连|无锡|苏州|潍坊|兰州|贵阳");
+pc[3] = new Array("UI","|请选择中心|全国|南京|成都|天津|合肥|苏州|上海|北京|深圳|广州|武汉|杭州|沈阳|石家庄|郑州|长沙|重庆|济南|南昌|太原|南宁|昆明|西安|长春|福州|哈尔滨|东莞|珠海|青岛|烟台|厦门|宁波|大连|无锡|潍坊");
+pc[4] = new Array("Android","|请选择中心|全国|上海|合肥|北京|深圳|广州|武汉|杭州|天津|石家庄|郑州|长沙|重庆|济南|南昌|太原|南宁|昆明|福州|东莞|珠海|青岛|烟台|厦门|宁波|无锡|苏州|潍坊");
+pc[5] = new Array("IOS","|请选择中心|全国|合肥|上海|深圳|广州|武汉|杭州|沈阳|石家庄|郑州|长沙|重庆|济南|南昌|太原|南宁|昆明|福州|东莞|珠海|青岛|烟台|厦门|宁波|无锡|苏州|潍坊");
+pc[6] = new Array("WEB前端","|请选择中心|全国|北京|上海|广州|深圳|成都|杭州|武汉|沈阳|长沙");
+pc[7] = new Array("会计","|请选择中心|全国|北京|上海|青岛|成都|深圳|广州|杭州|石家庄|郑州|重庆|成都|济南|太原|合肥|潍坊");
+pc[8] = new Array("网络营销","|请选择中心|全国|西安|天津|合肥|上海|北京|深圳|广州|武汉|杭州|石家庄|郑州|长沙|重庆|济南|南昌|太原|南宁|昆明|福州|东莞|珠海|青岛|烟台|厦门|宁波|无锡|潍坊");
+pc[9] = new Array("Unity3D","|请选择中心|全国|北京|上海|广州");
+pc[10] = new Array("大数据","|请选择中心|全国|北京|上海|合肥|南京|深圳|广州|武汉|杭州|天津|石家庄|郑州|长沙|重庆|成都|济南|南昌|太原|南宁|昆明|西安|福州|东莞|珠海|青岛|烟台|厦门|宁波|无锡|苏州|潍坊");
+pc[11] = new Array("PHP","|请选择中心|全国|西安|重庆|成都|上海|合肥|北京|深圳|广州|武汉|杭州|沈阳|天津|石家庄|郑州|长沙|济南|南昌|太原|南宁|昆明|福州|东莞|珠海|青岛|烟台|厦门|宁波|无锡|苏州|潍坊");
+pc[12] = new Array("嵌入式","|请选择中心|全国|上海|合肥|北京|深圳|广州|武汉|杭州|沈阳|天津|石家庄|郑州|长沙|重庆|成都|济南|南昌|太原|南宁|昆明|西安|长春|福州|哈尔滨|东莞|珠海|青岛|烟台|厦门|宁波|大连|无锡|苏州|潍坊");
+pc[13] = new Array("软件测试","|请选择中心|全国|西安|上海|合肥|北京|深圳|广州|武汉|杭州|天津|石家庄|郑州|长沙|重庆|济南|南昌|太原|南宁|昆明|福州|东莞|珠海|青岛|烟台|厦门|宁波|无锡|苏州|潍坊");
+pc[14] = new Array("C++","|请选择中心|全国|上海|成都|合肥|北京|深圳|广州|武汉|杭州|沈阳|天津|石家庄|郑州|长沙|重庆|济南|南昌|太原|南宁|昆明|西安|福州|东莞|珠海|青岛|烟台|厦门|宁波|无锡|苏州|潍坊");
+pc[15] = new Array("linux云计算","|请选择中心|全国|上海|合肥|北京|深圳|广州|武汉|杭州|天津|石家庄|郑州|长沙|重庆|成都|济南|南昌|太原|南宁|昆明|西安|福州|东莞|珠海|青岛|烟台|厦门|宁波|无锡|苏州|潍坊");
+pc[16] = new Array(".NET","|请选择中心|全国|合肥|上海|深圳|广州|武汉|杭州|天津|石家庄|郑州|长沙|重庆|成都|济南|南昌|太原|南宁|昆明|西安|福州|东莞|珠海|青岛|烟台|厦门|宁波|无锡|苏州|潍坊");
+pc[17] = new Array("Python+人工智能","|请选择中心|全国|北京|上海|广州|深圳");
+pc[18] = new Array("Html5","|请选择中心|全国");
+pc[19] = new Array("其他","|请选择中心|南京|上海|成都|合肥|北京|深圳|广州|武汉|杭州|沈阳|天津|石家庄|郑州|长沙|重庆|济南|南昌|太原|南宁|昆明|西安|长春|福州|哈尔滨|东莞|珠海|青岛|烟台|厦门|宁波|大连|无锡|苏州|潍坊|兰州|贵阳");
+
+
+
+
+
+
+
+
+
+
+function init() {
+ var p = document.getElementById("course");
+ var e = " ";
+ if ( p && e ) {
+  for( var i = 1; i < pc.length; i++ ) {
+   e = document.createElement( "option" );
+   e.setAttribute( "value", i );
+   e.innerHTML = pc[i][0];
+   p.appendChild(e);
+  }
+  showcity(1);
+ }
+}
+
+function selectcity() {
+ var p = document.getElementById("course");
+ var idx = p.options[p.selectedIndex].value;
+ if ( idx ) {
+  showcity(idx);
+ }
+}
+
+function showcity(idx) {
+ var c = document.getElementById("city");
+ if ( c ) {
+  while( c.hasChildNodes() ) {
+   c.removeChild(c.lastChild);
+  }
+ }
+ if ( idx ) {
+  var citys = pc[idx][1].split( "|" ); 
+  
+  for( var i = 1; i < citys.length; i++ ) {
+   e = document.createElement( "option" );
+   e.setAttribute( "value", citys[i] );
+   e.innerHTML = citys[i];
+   c.appendChild(e);
+  }
+ }
+}
+
+//搜索
+function search(){
+	var courseName=$("#course").find("option:selected").text();
+	var city=$("#city").find("option:selected").text();
+	//把城市和课程存入map
+	var cityToEng = new Map();
+			//存入城市
+			cityToEng.put("全国","www");
+			cityToEng.put("北京","bj");
+			cityToEng.put("上海","sh");
+			cityToEng.put("天津","tj");
+			cityToEng.put("重庆","cq");
+			cityToEng.put("石家庄","sjz");
+			cityToEng.put("贵阳","gy");
+			cityToEng.put("西宁","qh");
+			cityToEng.put("合肥","hf");
+			cityToEng.put("福州","fz");
+			cityToEng.put("厦门","xm");
+			cityToEng.put("甘肃","gs");
+			cityToEng.put("深圳","sz");
+			cityToEng.put("广州","gz");
+			cityToEng.put("东莞","dg");
+			cityToEng.put("珠海","zh");
+			cityToEng.put("南宁","nn");
+			cityToEng.put("海南","han");
+			cityToEng.put("郑州","zz");
+			cityToEng.put("大庆","dq");
+			cityToEng.put("哈尔滨","heb");
+			cityToEng.put("武汉","wh");
+			cityToEng.put("长沙","cs");
+			cityToEng.put("长春","cc");
+			cityToEng.put("南京","nj");
+			cityToEng.put("无锡","wx");
+			cityToEng.put("苏州","suz");
+			cityToEng.put("南昌","nc");
+			cityToEng.put("沈阳","sy");
+			cityToEng.put("大连","dl");
+			cityToEng.put("呼和浩特","hs");
+			cityToEng.put("银川","yc");
+			cityToEng.put("济南","jn");
+			cityToEng.put("青岛","qd");
+			cityToEng.put("烟台","yt");
+			cityToEng.put("太原","ty");
+			cityToEng.put("西安","xa");
+			cityToEng.put("成都","cd");
+			cityToEng.put("拉萨","ls");
+			cityToEng.put("乌鲁木齐","wlmq");
+			cityToEng.put("昆明","km");
+			cityToEng.put("杭州","hz");
+			cityToEng.put("宁波","nb");
+			cityToEng.put("重庆","cq");
+			cityToEng.put("潍坊","wf");
+			cityToEng.put("兰州","lz");
+			cityToEng.put("运城","ych");
+			cityToEng.put("晋城","jc");
+			cityToEng.put("临沂","linyi");
+			
+			//存入课程
+			cityToEng.put("JAVA","java");
+			cityToEng.put("大数据","data");
+			cityToEng.put("C++","c");
+			cityToEng.put("Android","android");
+			cityToEng.put("IOS","ios");
+			cityToEng.put("PHP","php");
+			cityToEng.put(".NET","net");
+			cityToEng.put("嵌入式","arm");
+			cityToEng.put("软件测试","qa");
+			cityToEng.put("UI","ui");
+			cityToEng.put("网络营销","so");
+			cityToEng.put("linux云计算","linux");
+			cityToEng.put("会计","acc");
+			cityToEng.put("WEB前端","web");
+			cityToEng.put("Unity3D","3d");
+			cityToEng.put("Html5","html5");
+			cityToEng.put("Python+人工智能","python");
+			cityToEng.put("其他","其他");
+			
+	if("全国"==city.trim()){
+		window.open("http://"+cityToEng.get(courseName)+".tedu.cn");
+	}else if(cityToEng.get(courseName)=="其他"){
+		window.open("http://"+cityToEng.get(city)+".tedu.cn");
+	}
+	else{
+		console.log(cityToEng.get(courseName));
+		window.open("http://"+cityToEng.get(city)+"."+cityToEng.get(courseName)+".tedu.cn");
+	}
+}
+
+
+
+
+
+//自定义Map
+function Map(){
+	this.container = new Object();
+}
+
+
+Map.prototype.put = function(key, value){
+	this.container[key] = value;
+}
+
+
+Map.prototype.get = function(key){
+	return this.container[key];
+}
+
+
+Map.prototype.keySet = function() {
+	var keyset = new Array();
+	var count = 0;
+	for (var key in this.container) {
+		// 跳过object的extend函数
+		if (key == 'extend') {
+		continue;
+		}
+		keyset[count] = key;
+		count++;
+		}
+		return keyset;
+}
+
+
+Map.prototype.size = function() {
+var count = 0;
+for (var key in this.container) {
+	// 跳过object的extend函数
+	if (key == 'extend'){
+	continue;
+	}
+	count++;
+	}
+	return count;
+}
+
+
+Map.prototype.remove = function(key) {
+	delete this.container[key];
+}
+
+
+Map.prototype.toString = function(){
+	var str = "";
+	for (var i = 0, keys = this.keySet(), len = keys.length; i < len; i++) {
+	str = str + keys[i] + "=" + this.container[keys[i]] + ";\n";
+	}
+	return str;
+}
+init();
